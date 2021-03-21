@@ -1,0 +1,15 @@
+C:\Users\samue\source\repos\TouristSpots\TouristSpotsData\bin\Debug\netcoreapp3.1\TouristSpotsDomain.dll
+C:\Users\samue\source\repos\TouristSpots\TouristSpotsData\obj\Debug\netcoreapp3.1\TouristSpotsData.csprojAssemblyReference.cache
+C:\Users\samue\source\repos\TouristSpots\TouristSpotsData\obj\Debug\netcoreapp3.1\TouristSpotsData.AssemblyInfoInputs.cache
+C:\Users\samue\source\repos\TouristSpots\TouristSpotsData\obj\Debug\netcoreapp3.1\TouristSpotsData.AssemblyInfo.cs
+C:\Users\samue\source\repos\TouristSpots\TouristSpotsData\bin\Debug\netcoreapp3.1\TouristSpotsData.deps.json
+C:\Users\samue\source\repos\TouristSpots\TouristSpotsData\bin\Debug\netcoreapp3.1\TouristSpotsData.runtimeconfig.json
+C:\Users\samue\source\repos\TouristSpots\TouristSpotsData\bin\Debug\netcoreapp3.1\TouristSpotsData.runtimeconfig.dev.json
+C:\Users\samue\source\repos\TouristSpots\TouristSpotsData\bin\Debug\netcoreapp3.1\TouristSpotsData.dll
+C:\Users\samue\source\repos\TouristSpots\TouristSpotsData\bin\Debug\netcoreapp3.1\TouristSpotsData.pdb
+C:\Users\samue\source\repos\TouristSpots\TouristSpotsData\bin\Debug\netcoreapp3.1\TouristSpotsDomain.pdb
+C:\Users\samue\source\repos\TouristSpots\TouristSpotsData\obj\Debug\netcoreapp3.1\TouristSpotsData.csproj.CoreCompileInputs.cache
+C:\Users\samue\source\repos\TouristSpots\TouristSpotsData\obj\Debug\netcoreapp3.1\TouristSpotsData.csproj.CopyComplete
+C:\Users\samue\source\repos\TouristSpots\TouristSpotsData\obj\Debug\netcoreapp3.1\TouristSpotsData.dll
+C:\Users\samue\source\repos\TouristSpots\TouristSpotsData\obj\Debug\netcoreapp3.1\TouristSpotsData.pdb
+C:\Users\samue\source\repos\TouristSpots\TouristSpotsData\obj\Debug\netcoreapp3.1\TouristSpotsData.genruntimeconfig.cache
