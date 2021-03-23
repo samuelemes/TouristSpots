@@ -1,0 +1,9 @@
+C:\Users\samue\source\repos\TouristSpots\TouristSpotCore\bin\Debug\netcoreapp2.2\TouristSpotCore.deps.json
+C:\Users\samue\source\repos\TouristSpots\TouristSpotCore\bin\Debug\netcoreapp2.2\TouristSpotCore.dll
+C:\Users\samue\source\repos\TouristSpots\TouristSpotCore\bin\Debug\netcoreapp2.2\TouristSpotCore.pdb
+C:\Users\samue\source\repos\TouristSpots\TouristSpotCore\obj\Debug\netcoreapp2.2\TouristSpotCore.csprojAssemblyReference.cache
+C:\Users\samue\source\repos\TouristSpots\TouristSpotCore\obj\Debug\netcoreapp2.2\TouristSpotCore.AssemblyInfoInputs.cache
+C:\Users\samue\source\repos\TouristSpots\TouristSpotCore\obj\Debug\netcoreapp2.2\TouristSpotCore.AssemblyInfo.cs
+C:\Users\samue\source\repos\TouristSpots\TouristSpotCore\obj\Debug\netcoreapp2.2\TouristSpotCore.csproj.CoreCompileInputs.cache
+C:\Users\samue\source\repos\TouristSpots\TouristSpotCore\obj\Debug\netcoreapp2.2\TouristSpotCore.dll
+C:\Users\samue\source\repos\TouristSpots\TouristSpotCore\obj\Debug\netcoreapp2.2\TouristSpotCore.pdb

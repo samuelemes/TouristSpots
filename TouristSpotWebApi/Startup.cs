@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using System;
 using TouristSpotsData;
 using TouristSpotsDomain.Entities.Security;
 
@@ -21,21 +22,14 @@ namespace TouristSpotWebApi
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddIdentity<AppUser, AppRole>(options => {
-                options.User.RequireUniqueEmail = true;
-            }
-            )
-            .AddEntityFrameworkStores<AppDbContext>();
-            //services.AddDbContext<AppDbContext>(options => options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
-
-
 
             Database.DatabaseStartup.ConfigureServices(services);
             Domain.DomainStartup.ConfigureServices(services);
             Service.ServiceStartup.ConfigureServices(services);
 
-            
 
+            //services.AddMvc()
+            //.SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
 
 
             services.AddRazorPages();

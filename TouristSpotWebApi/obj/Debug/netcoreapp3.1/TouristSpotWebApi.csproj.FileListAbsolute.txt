@@ -97,3 +97,7 @@ C:\Users\samue\source\repos\TouristSpots\TouristSpotWebApi\bin\Debug\netcoreapp3
 C:\Users\samue\source\repos\TouristSpots\TouristSpotWebApi\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Identity.UI.dll
 C:\Users\samue\source\repos\TouristSpots\TouristSpotWebApi\bin\Debug\netcoreapp3.1\Microsoft.Extensions.FileProviders.Abstractions.dll
 C:\Users\samue\source\repos\TouristSpots\TouristSpotWebApi\bin\Debug\netcoreapp3.1\Microsoft.Extensions.FileProviders.Embedded.dll
+C:\Users\samue\source\repos\TouristSpots\TouristSpotWebApi\bin\Debug\netcoreapp3.1\Microsoft.AspNet.Identity.Core.dll
+C:\Users\samue\source\repos\TouristSpots\TouristSpotWebApi\bin\Debug\netcoreapp3.1\IdentityModel.dll
+C:\Users\samue\source\repos\TouristSpots\TouristSpotWebApi\bin\Debug\netcoreapp3.1\System.Text.Encodings.Web.dll
+C:\Users\samue\source\repos\TouristSpots\TouristSpotWebApi\bin\Debug\netcoreapp3.1\System.Text.Json.dll

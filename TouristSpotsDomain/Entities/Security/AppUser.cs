@@ -1,10 +1,14 @@
-﻿using Microsoft.AspNetCore.Identity;
+﻿using TouristSpotsDomain.Base;
 
 namespace TouristSpotsDomain.Entities.Security
 {
-    public class AppUser : IdentityUser<int>
+    public class AppUser : BaseEntity//, IdentityUser<int>, IUser<int>
     {
-        public string FirstName { get; set; }
-        public string LastName { get; set; }
+        //public int Id { get; set; }
+        //public string UserName { get; set; }
+        //public string Email { get; set; }
+        ////public string NormalizeUserName { get; set; }
+        //public string PasswordHash { get; set; }
+        public bool IsAdmin { get; internal set; }
     }
 }

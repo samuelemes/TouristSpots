@@ -1,0 +1,4 @@
+C:\Users\samue\source\repos\TouristSpots\TouristSpotsData\obj\Debug\netcoreapp3.0\TouristSpotsData.csprojAssemblyReference.cache
+C:\Users\samue\source\repos\TouristSpots\TouristSpotsData\obj\Debug\netcoreapp3.0\TouristSpotsData.AssemblyInfoInputs.cache
+C:\Users\samue\source\repos\TouristSpots\TouristSpotsData\obj\Debug\netcoreapp3.0\TouristSpotsData.AssemblyInfo.cs
+C:\Users\samue\source\repos\TouristSpots\TouristSpotsData\obj\Debug\netcoreapp3.0\TouristSpotsData.csproj.CoreCompileInputs.cache

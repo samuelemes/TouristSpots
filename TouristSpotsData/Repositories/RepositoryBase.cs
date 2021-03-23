@@ -10,7 +10,7 @@ namespace TouristSpotsData.Repositories
     {
         private static DbContextOptions<AppDbContext> _options;
 
-        protected AppDbContext DbContext = new AppDbContext(_options);
+        protected AppDbContext DbContext = new AppDbContext();
         public void Add(TEntity model)
         {
             DbContext.Set<TEntity>().Add(model);

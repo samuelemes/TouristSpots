@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "ilTywMi9ZOWG5L1pHDNScQzR8nYE5JhvpXKeK+wPF4FzQUdjLdF6MoQ2EjJSazO/xE49kzIahHtvhGSQI6reYA==",
+  "dgSpecHash": "FD7Y3ZlRfnuapKCh5E5X7b5g37D/L6c6P0aItnwFoKnZhvFXBtQw70HgWeSQSINZtjTGWnVwWrElCVDpCBWDFQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\samue\\source\\repos\\TouristSpots\\TouristSpotsService\\TouristSpotsService.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\samue\\.nuget\\packages\\identitymodel\\5.0.1\\identitymodel.5.0.1.nupkg.sha512",
     "C:\\Users\\samue\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\5.0.4\\microsoft.aspnetcore.cryptography.internal.5.0.4.nupkg.sha512",
     "C:\\Users\\samue\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\5.0.4\\microsoft.aspnetcore.cryptography.keyderivation.5.0.4.nupkg.sha512",
     "C:\\Users\\samue\\.nuget\\packages\\microsoft.aspnetcore.identity.entityframeworkcore\\3.1.11\\microsoft.aspnetcore.identity.entityframeworkcore.3.1.11.nupkg.sha512",
@@ -96,6 +97,8 @@
     "C:\\Users\\samue\\.nuget\\packages\\system.text.encoding\\4.3.0\\system.text.encoding.4.3.0.nupkg.sha512",
     "C:\\Users\\samue\\.nuget\\packages\\system.text.encoding.codepages\\4.5.0\\system.text.encoding.codepages.4.5.0.nupkg.sha512",
     "C:\\Users\\samue\\.nuget\\packages\\system.text.encoding.extensions\\4.3.0\\system.text.encoding.extensions.4.3.0.nupkg.sha512",
+    "C:\\Users\\samue\\.nuget\\packages\\system.text.encodings.web\\5.0.0\\system.text.encodings.web.5.0.0.nupkg.sha512",
+    "C:\\Users\\samue\\.nuget\\packages\\system.text.json\\5.0.0\\system.text.json.5.0.0.nupkg.sha512",
     "C:\\Users\\samue\\.nuget\\packages\\system.text.regularexpressions\\4.3.0\\system.text.regularexpressions.4.3.0.nupkg.sha512",
     "C:\\Users\\samue\\.nuget\\packages\\system.threading\\4.3.0\\system.threading.4.3.0.nupkg.sha512",
     "C:\\Users\\samue\\.nuget\\packages\\system.threading.tasks\\4.3.0\\system.threading.tasks.4.3.0.nupkg.sha512",
