@@ -1,9 +1,9 @@
-﻿using TouristSpotsDomain.Entities;
+﻿using TouristSpotsDomain.Entities.Security;
 using TouristSpotsDomain.Interface.Repositories;
 
 namespace TouristSpotsData.Repositories
 {
-    public class UserRepository : RepositoryBase<User>, IUserRepository
+    public class UserRepository : RepositoryBase<AppUser>, IUserRepository
     {
     }
 }

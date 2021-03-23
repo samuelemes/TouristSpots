@@ -1,5 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations.Schema;
 using TouristSpotsDomain.Base;
+using TouristSpotsDomain.Entities.Security;
 
 namespace TouristSpotsDomain.Entities
 {
@@ -7,7 +8,7 @@ namespace TouristSpotsDomain.Entities
     {
         public int idUsuario { get; set; }
         [ForeignKey("idUsuario")]
-        public User User { get; set; }
+        public AppUser User { get; set; }
 
         public int idTouristSpot { get; set; }
         [ForeignKey("idTouristSpot")]

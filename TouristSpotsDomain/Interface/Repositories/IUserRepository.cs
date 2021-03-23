@@ -1,8 +1,8 @@
-﻿using TouristSpotsDomain.Entities;
+﻿using TouristSpotsDomain.Entities.Security;
 
 namespace TouristSpotsDomain.Interface.Repositories
 {
-    public interface IUserRepository : IRepositoryBase<User>
+    public interface IUserRepository : IRepositoryBase<AppUser>
     {
     }
 }

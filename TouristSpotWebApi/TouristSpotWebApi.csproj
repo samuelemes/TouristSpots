@@ -3,6 +3,7 @@
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
     <UserSecretsId>aspnet-TouristSpotWebApi-F9B5BBF7-5C20-4DDC-B95F-7E53FEC69242</UserSecretsId>
+    <OutputType>WinExe</OutputType>
   </PropertyGroup>
 
   <ItemGroup>

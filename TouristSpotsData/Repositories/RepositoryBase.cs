@@ -8,7 +8,9 @@ namespace TouristSpotsData.Repositories
 {
     public class RepositoryBase<TEntity> : IDisposable, IRepositoryBase<TEntity> where TEntity : class
     {
-        protected AppDbContext DbContext = new AppDbContext();
+        private static DbContextOptions<AppDbContext> _options;
+
+        protected AppDbContext DbContext = new AppDbContext(_options);
         public void Add(TEntity model)
         {
             DbContext.Set<TEntity>().Add(model);

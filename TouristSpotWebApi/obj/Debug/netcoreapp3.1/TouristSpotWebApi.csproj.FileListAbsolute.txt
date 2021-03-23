@@ -2,7 +2,6 @@ C:\Users\samue\source\repos\TouristSpots\TouristSpotWebApi\obj\Debug\netcoreapp3
 C:\Users\samue\source\repos\TouristSpots\TouristSpotWebApi\obj\Debug\netcoreapp3.1\TouristSpotWebApi.AssemblyInfoInputs.cache
 C:\Users\samue\source\repos\TouristSpots\TouristSpotWebApi\obj\Debug\netcoreapp3.1\TouristSpotWebApi.AssemblyInfo.cs
 C:\Users\samue\source\repos\TouristSpots\TouristSpotWebApi\obj\Debug\netcoreapp3.1\TouristSpotWebApi.csproj.CoreCompileInputs.cache
-C:\Users\samue\source\repos\TouristSpots\TouristSpotWebApi\obj\Debug\netcoreapp3.1\TouristSpotWebApi.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\samue\source\repos\TouristSpots\TouristSpotWebApi\obj\Debug\netcoreapp3.1\TouristSpotWebApi.RazorAssemblyInfo.cache
 C:\Users\samue\source\repos\TouristSpots\TouristSpotWebApi\obj\Debug\netcoreapp3.1\TouristSpotWebApi.RazorAssemblyInfo.cs
 C:\Users\samue\source\repos\TouristSpots\TouristSpotWebApi\bin\Debug\netcoreapp3.1\appsettings.Development.json
@@ -98,4 +97,3 @@ C:\Users\samue\source\repos\TouristSpots\TouristSpotWebApi\bin\Debug\netcoreapp3
 C:\Users\samue\source\repos\TouristSpots\TouristSpotWebApi\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Identity.UI.dll
 C:\Users\samue\source\repos\TouristSpots\TouristSpotWebApi\bin\Debug\netcoreapp3.1\Microsoft.Extensions.FileProviders.Abstractions.dll
 C:\Users\samue\source\repos\TouristSpots\TouristSpotWebApi\bin\Debug\netcoreapp3.1\Microsoft.Extensions.FileProviders.Embedded.dll
-C:\Users\samue\source\repos\TouristSpots\TouristSpotWebApi\obj\Debug\netcoreapp3.1\TouristSpotWebApi.MvcApplicationPartsAssemblyInfo.cs
