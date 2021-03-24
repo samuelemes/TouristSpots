@@ -2,34 +2,29 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
-    <UserSecretsId>aspnet-TouristSpotWebApi-F9B5BBF7-5C20-4DDC-B95F-7E53FEC69242</UserSecretsId>
-    <OutputType>WinExe</OutputType>
+    <UserSecretsId>aspnet-TouristSpotWebApi-65265136-E407-4797-B956-1091D1BAF4A9</UserSecretsId>
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="Framework\**" />
-    <Content Remove="Framework\**" />
-    <EmbeddedResource Remove="Framework\**" />
-    <None Remove="Framework\**" />
+    <Compile Remove="Data\ApplicationDbContext.cs" />
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.AspNet.Identity.Core" Version="2.2.3" />
     <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="3.1.11" />
-    <PackageReference Include="Microsoft.AspNetCore.Identity" Version="2.2.0" />
     <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="3.1.11" />
     <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="3.1.11" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.11" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.11" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\TouristSpotCore\TouristSpotCore.csproj" />
-    <ProjectReference Include="..\TouristSpotsDomain\TouristSpotsDomain.csproj" />
+    <ProjectReference Include="..\TouristSpotsData\TouristSpotsData.csproj" />
     <ProjectReference Include="..\TouristSpotsService\TouristSpotsService.csproj" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Data\Migrations\" />
+    <Folder Include="Data\" />
   </ItemGroup>
 
 </Project>

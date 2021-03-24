@@ -26,8 +26,15 @@ using TouristSpotWebApi;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 3 "C:\Users\samue\source\repos\TouristSpots\TouristSpotWebApi\Pages\_ViewImports.cshtml"
+using TouristSpotsDomain.Entities.Security;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"a0906750319c55d6ce48b545e707c28c2eb4094c", @"/Pages/Privacy.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"8ba9e51d18b1c2cc5e4c1c6156678bec5353bf20", @"/Pages/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"2b8e19ee7737b3217ae3d1a8746299f3d8d56582", @"/Pages/_ViewImports.cshtml")]
     public class Pages_Privacy : global::Microsoft.AspNetCore.Mvc.RazorPages.Page
     {
         #pragma warning disable 1998

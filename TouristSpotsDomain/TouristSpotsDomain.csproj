@@ -12,16 +12,12 @@
 
   <ItemGroup>
     <Compile Include="Entities\Security\AppRole.cs" />
-    <Compile Include="Entities\Security\AppRoleClaim.cs" />
     <Compile Include="Entities\Security\AppUser.cs" />
-    <Compile Include="Entities\Security\AppUserClaim.cs" />
-    <Compile Include="Entities\Security\AppUserLogin.cs" />
-    <Compile Include="Entities\Security\AppUserRole.cs" />
-    <Compile Include="Entities\Security\AppUserToken.cs" />
   </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="IdentityModel" Version="5.0.1" />
+    <PackageReference Include="Microsoft.AspNet.Identity.Core" Version="2.2.3" />
     <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="5.0.0" />
     <PackageReference Include="Microsoft.Extensions.Identity.Stores" Version="5.0.4" />
     <PackageReference Include="System.ComponentModel.Annotations" Version="5.0.0" />

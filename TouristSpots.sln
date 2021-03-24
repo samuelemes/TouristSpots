@@ -11,9 +11,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TouristSpotsService", "Tour
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TouristSpotCore", "TouristSpotCore\TouristSpotCore.csproj", "{0E2F414C-33FB-480A-8388-74326E057FC3}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TouristSpotWebApi", "TouristSpotWebApi\TouristSpotWebApi.csproj", "{E7B0AF38-451A-40D2-9D7E-F10043F02FFD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TouristSpotsTeste", "TouristSpotsTeste\TouristSpotsTeste.csproj", "{E7D641D5-0F9B-458F-8964-101017656197}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TouristSpotsTeste", "TouristSpotsTeste\TouristSpotsTeste.csproj", "{E7D641D5-0F9B-458F-8964-101017656197}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TouristSpotWebApi", "TouristSpotWebApi\TouristSpotWebApi.csproj", "{529ECEF8-2C61-41BB-BA61-5670C97A93EB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -37,14 +37,14 @@ Global
 		{0E2F414C-33FB-480A-8388-74326E057FC3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0E2F414C-33FB-480A-8388-74326E057FC3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0E2F414C-33FB-480A-8388-74326E057FC3}.Release|Any CPU.Build.0 = Release|Any CPU
-		{E7B0AF38-451A-40D2-9D7E-F10043F02FFD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E7B0AF38-451A-40D2-9D7E-F10043F02FFD}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E7B0AF38-451A-40D2-9D7E-F10043F02FFD}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E7B0AF38-451A-40D2-9D7E-F10043F02FFD}.Release|Any CPU.Build.0 = Release|Any CPU
 		{E7D641D5-0F9B-458F-8964-101017656197}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{E7D641D5-0F9B-458F-8964-101017656197}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E7D641D5-0F9B-458F-8964-101017656197}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E7D641D5-0F9B-458F-8964-101017656197}.Release|Any CPU.Build.0 = Release|Any CPU
+		{529ECEF8-2C61-41BB-BA61-5670C97A93EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{529ECEF8-2C61-41BB-BA61-5670C97A93EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{529ECEF8-2C61-41BB-BA61-5670C97A93EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{529ECEF8-2C61-41BB-BA61-5670C97A93EB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

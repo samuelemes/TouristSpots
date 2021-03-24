@@ -1,8 +1,9 @@
-﻿using TouristSpotsDomain.Base;
+﻿using Microsoft.AspNet.Identity;
+using Microsoft.AspNetCore.Identity;
 
 namespace TouristSpotsDomain.Entities.Security
 {
-    public class AppUser : BaseEntity//, IdentityUser<int>, IUser<int>
+    public class AppUser : IdentityUser<int>, IUser<int>
     {
         //public int Id { get; set; }
         //public string UserName { get; set; }

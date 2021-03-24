@@ -204,6 +204,10 @@
               "target": "Package",
               "version": "[5.0.1, )"
             },
+            "Microsoft.AspNet.Identity.Core": {
+              "target": "Package",
+              "version": "[2.2.3, )"
+            },
             "Microsoft.Extensions.DependencyInjection.Abstractions": {
               "target": "Package",
               "version": "[5.0.0, )"
@@ -332,8 +336,8 @@
               "C:\\Users\\samue\\source\\repos\\TouristSpots\\TouristSpotCore\\TouristSpotCore.csproj": {
                 "projectPath": "C:\\Users\\samue\\source\\repos\\TouristSpots\\TouristSpotCore\\TouristSpotCore.csproj"
               },
-              "C:\\Users\\samue\\source\\repos\\TouristSpots\\TouristSpotsDomain\\TouristSpotsDomain.csproj": {
-                "projectPath": "C:\\Users\\samue\\source\\repos\\TouristSpots\\TouristSpotsDomain\\TouristSpotsDomain.csproj"
+              "C:\\Users\\samue\\source\\repos\\TouristSpots\\TouristSpotsData\\TouristSpotsData.csproj": {
+                "projectPath": "C:\\Users\\samue\\source\\repos\\TouristSpots\\TouristSpotsData\\TouristSpotsData.csproj"
               },
               "C:\\Users\\samue\\source\\repos\\TouristSpots\\TouristSpotsService\\TouristSpotsService.csproj": {
                 "projectPath": "C:\\Users\\samue\\source\\repos\\TouristSpots\\TouristSpotsService\\TouristSpotsService.csproj"
@@ -351,23 +355,19 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "dependencies": {
-            "Microsoft.AspNet.Identity.Core": {
-              "target": "Package",
-              "version": "[2.2.3, )"
-            },
             "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": {
               "target": "Package",
               "version": "[3.1.11, )"
-            },
-            "Microsoft.AspNetCore.Identity": {
-              "target": "Package",
-              "version": "[2.2.0, )"
             },
             "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
               "target": "Package",
               "version": "[3.1.11, )"
             },
             "Microsoft.AspNetCore.Identity.UI": {
+              "target": "Package",
+              "version": "[3.1.11, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
               "version": "[3.1.11, )"
             },

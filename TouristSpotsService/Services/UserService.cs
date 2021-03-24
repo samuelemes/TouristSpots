@@ -1,10 +1,10 @@
-﻿using TouristSpotsDomain.Entities.Security;
+﻿using Microsoft.AspNetCore.Identity;
 using TouristSpotsDomain.Interface.Repositories;
 using TouristSpotsService.Interfaces;
 
 namespace TouristSpotsService
 {
-    public class UserService : ServiceBase<AppUser>, IUserService
+    public class UserService : ServiceBase<IdentityUser<int>>, IUserService
     {
         private readonly IUserRepository _repository;
 
