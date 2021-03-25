@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
+using System.Net.Http;
 using TouristSpotCore.Lib.Http;
 using TouristSpotsDomain.Entities;
 using TouristSpotsService.Interfaces;
@@ -20,12 +21,12 @@ namespace TouristSpotWebApi.Controllers
         [HttpPost]
         [Route("{model}")]
         [Consumes("application/json")]
-        public ActionResult BuscarPais([FromBody] TouristSpot filter)
+        public HttpResponseMessage BuscarPais()
         {
             var result = new ResultBase<IEnumerable<TouristSpot>>();
-            result.Data = _service.GetByName(filter);
+            //result.Data = _service.GetByName(filter);
 
-            return new ObjectResult(result);
+            return null;
         }
     }
 }

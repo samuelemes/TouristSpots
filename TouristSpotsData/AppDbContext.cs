@@ -7,10 +7,10 @@ namespace TouristSpotsData
 {
     public class AppDbContext : IdentityDbContext<AppUser, AppRole, int>
     {
-        public AppDbContext(DbContextOptions<AppDbContext> options)
-            : base(options)
-        {
-        }
+        //public AppDbContext(DbContextOptions<AppDbContext> options)
+        //    : base(options)
+        //{
+        //}
         //public static AppDbContext Create()
         //{
         //    return new AppDbContext();
@@ -19,7 +19,7 @@ namespace TouristSpotsData
  
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer(@"Data Source=(LocalDb)\v11.0;AttachDbFilename=D:\users\samue\TOURIST_SPOTS.mdf;Initial Catalog=TOURIST_SPOTS;Integrated Security=True; MultipleActiveResultSets=true");
+            optionsBuilder.UseSqlServer(@"Data Source=(LocalDb)\v11.0;AttachDbFilename=D:\users\samue\TouristSpot.mdf;Initial Catalog=TouristSpot;Integrated Security=True; MultipleActiveResultSets=true");
         }
 
         public DbSet<Category> Category { get; set; }
