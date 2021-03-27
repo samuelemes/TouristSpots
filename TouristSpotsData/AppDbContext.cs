@@ -37,6 +37,10 @@ namespace TouristSpotsData
             modelBuilder.Entity<Category>().HasData(new Category { Id = 4, Nome = "Monument" });
             #endregion
 
+            #region Usuario Administrador
+            modelBuilder.Entity<AppUser>().HasData(new AppUser { Id = 1, IsAdmin = true, UserName = "samuelemes" });
+            #endregion
+
 
 
 

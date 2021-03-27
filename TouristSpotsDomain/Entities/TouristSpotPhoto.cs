@@ -15,6 +15,7 @@ namespace TouristSpotsDomain.Entities
         public AppUser User { get; set; }
 
         public string ImageTitle { get; set; }
-        public string Image { get; set; }
+        
+        public byte[] Image { get; set; }
     }
 }

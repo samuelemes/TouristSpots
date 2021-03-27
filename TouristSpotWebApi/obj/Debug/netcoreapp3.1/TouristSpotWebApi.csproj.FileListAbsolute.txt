@@ -102,7 +102,6 @@ C:\Users\samue\source\repos\TouristSpots\TouristSpotWebApi\bin\Debug\netcoreapp3
 C:\Users\samue\source\repos\TouristSpots\TouristSpotWebApi\bin\Debug\netcoreapp3.1\TouristSpotWebApi.Views.dll
 C:\Users\samue\source\repos\TouristSpots\TouristSpotWebApi\bin\Debug\netcoreapp3.1\TouristSpotWebApi.Views.pdb
 C:\Users\samue\source\repos\TouristSpots\TouristSpotWebApi\bin\Debug\netcoreapp3.1\IdentityModel.dll
-C:\Users\samue\source\repos\TouristSpots\TouristSpotWebApi\bin\Debug\netcoreapp3.1\Microsoft.AspNet.Identity.Core.dll
 C:\Users\samue\source\repos\TouristSpots\TouristSpotWebApi\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Cryptography.Internal.dll
 C:\Users\samue\source\repos\TouristSpots\TouristSpotWebApi\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
 C:\Users\samue\source\repos\TouristSpots\TouristSpotWebApi\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.dll
@@ -195,3 +194,6 @@ C:\Users\samue\source\repos\TouristSpots\TouristSpotWebApi\bin\Debug\netcoreapp3
 C:\Users\samue\source\repos\TouristSpots\TouristSpotWebApi\bin\Debug\netcoreapp3.1\TouristSpotsService.dll
 C:\Users\samue\source\repos\TouristSpots\TouristSpotWebApi\bin\Debug\netcoreapp3.1\TouristSpotCore.pdb
 C:\Users\samue\source\repos\TouristSpots\TouristSpotWebApi\bin\Debug\netcoreapp3.1\TouristSpotsService.pdb
+C:\Users\samue\source\repos\TouristSpots\TouristSpotWebApi\bin\Debug\netcoreapp3.1\FluentValidation.dll
+C:\Users\samue\source\repos\TouristSpots\TouristSpotWebApi\bin\Debug\netcoreapp3.1\FluentValidation.AspNetCore.dll
+C:\Users\samue\source\repos\TouristSpots\TouristSpotWebApi\bin\Debug\netcoreapp3.1\FluentValidation.DependencyInjectionExtensions.dll

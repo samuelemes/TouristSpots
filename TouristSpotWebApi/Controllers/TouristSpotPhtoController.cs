@@ -1,23 +1,20 @@
 ﻿using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
+using System;
 using TouristSpotsDomain.Entities;
 using TouristSpotsService.Interfaces;
 
 namespace TouristSpotWebApi.Controllers
 {
-    public class CategoryController : ApiControllerBase<Category>
+    [Produces("application/json")]
+    public class TouristSpotPhotoController : ApiControllerBase<TouristSpotPhoto>
     {
         public static IWebHostEnvironment _environment;
-        private readonly ICategoryService _service;
+        private readonly ITouristSpotPhotoService _service;
 
-        public CategoryController(ICategoryService service) : base(service)
+        public TouristSpotPhotoController(ITouristSpotPhotoService service) : base(service)
         {
             _service = service;
-        }
-
-        public IActionResult Index()
-        {
-            return null;
         }
     }
 }

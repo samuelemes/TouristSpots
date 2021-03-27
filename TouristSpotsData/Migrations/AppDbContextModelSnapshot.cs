@@ -276,6 +276,20 @@ namespace TouristSpotsData.Migrations
                         .HasFilter("[NormalizedUserName] IS NOT NULL");
 
                     b.ToTable("AspNetUsers");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            AccessFailedCount = 0,
+                            ConcurrencyStamp = "523ebf44-6c83-46c9-b95a-158b5aa7c2e9",
+                            EmailConfirmed = false,
+                            IsAdmin = true,
+                            LockoutEnabled = false,
+                            PhoneNumberConfirmed = false,
+                            TwoFactorEnabled = false,
+                            UserName = "samuelemes"
+                        });
                 });
 
             modelBuilder.Entity("TouristSpotsDomain.Entities.TouristSpot", b =>
@@ -311,8 +325,8 @@ namespace TouristSpotsData.Migrations
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<string>("Image")
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<byte[]>("Image")
+                        .HasColumnType("varbinary(max)");
 
                     b.Property<string>("ImageTitle")
                         .HasColumnType("nvarchar(max)");

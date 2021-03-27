@@ -3,13 +3,12 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using System.Web.Http;
 using TouristSpotsData;
 using TouristSpotsDomain.Entities.Security;
 
 namespace TouristSpotWebApi
 {
-    public class Startup
+    public class Startup : TouristSpotCore.StartupBase
     {
         public Startup(IConfiguration configuration)
         {
@@ -21,24 +20,43 @@ namespace TouristSpotWebApi
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddDbContext<AppDbContext>();
-
-            services.AddDefaultIdentity<AppUser>(options => options.SignIn.RequireConfirmedAccount = true)
-                .AddEntityFrameworkStores<AppDbContext>();
-
-            services.AddRazorPages();
+            base.ConfigureServicesBase(services);
 
             Database.DatabaseStartup.ConfigureServices(services);
             Domain.DomainStartup.ConfigureServices(services);
             Service.ServiceStartup.ConfigureServices(services);
+
+            services.AddDbContext<AppDbContext>();
+
+            services.AddControllers()
+                .ConfigureApiBehaviorOptions(options =>
+                {
+                    options.SuppressConsumesConstraintForFormFileParameters = true;
+                    options.SuppressInferBindingSourcesForParameters = true;
+                    options.SuppressModelStateInvalidFilter = true;
+                    options.SuppressMapClientErrors = true;
+                });
+
+
+
+            services.AddDefaultIdentity<AppUser>(options => options.SignIn.RequireConfirmedAccount = true)
+                .AddEntityFrameworkStores<AppDbContext>();
+
+            //services.AddRazorPages();
+            services.AddControllersWithViews();
+
+            
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
+            base.ConfigureBase(app, env);
+
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
+                app.UseStaticFiles();
                 app.UseDatabaseErrorPage();
             }
             else
@@ -55,25 +73,14 @@ namespace TouristSpotWebApi
             });
 
             app.UseHttpsRedirection();
-            app.UseStaticFiles();
 
             app.UseRouting();
             app.UseCors();
 
-            app.UseAuthentication();
-            app.UseAuthorization();
-
-            //app.UseEndpoints(endpoints =>
-            //{
-            //    endpoints.MapRazorPages();
-            //});
-
-            var config = new HttpConfiguration();
-            config.MapHttpAttributeRoutes();
-
             app.UseEndpoints(endpoints =>
             {
                 //endpoints.MapRazorPages();
+                //endpoints.MapControllers();
                 endpoints.MapControllerRoute(
                     name: "default",
                     pattern: "{controller}/{action=Index}/{id?}");

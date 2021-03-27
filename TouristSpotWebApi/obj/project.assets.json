@@ -2,6 +2,44 @@
   "version": 3,
   "targets": {
     ".NETCoreApp,Version=v3.1": {
+      "FluentValidation/9.5.3": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/FluentValidation.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/FluentValidation.dll": {}
+        }
+      },
+      "FluentValidation.AspNetCore/9.5.3": {
+        "type": "package",
+        "dependencies": {
+          "FluentValidation": "9.5.3",
+          "FluentValidation.DependencyInjectionExtensions": "9.5.3"
+        },
+        "compile": {
+          "lib/netcoreapp3.1/FluentValidation.AspNetCore.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/FluentValidation.AspNetCore.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
+      "FluentValidation.DependencyInjectionExtensions/9.5.3": {
+        "type": "package",
+        "dependencies": {
+          "FluentValidation": "9.5.3",
+          "Microsoft.Extensions.Dependencyinjection.Abstractions": "2.1.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/FluentValidation.DependencyInjectionExtensions.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/FluentValidation.DependencyInjectionExtensions.dll": {}
+        }
+      },
       "IdentityModel/5.0.1": {
         "type": "package",
         "dependencies": {
@@ -13,15 +51,6 @@
         },
         "runtime": {
           "lib/netstandard2.0/IdentityModel.dll": {}
-        }
-      },
-      "Microsoft.AspNet.Identity.Core/2.2.3": {
-        "type": "package",
-        "compile": {
-          "lib/net45/Microsoft.AspNet.Identity.Core.dll": {}
-        },
-        "runtime": {
-          "lib/net45/Microsoft.AspNet.Identity.Core.dll": {}
         }
       },
       "Microsoft.AspNet.WebApi.Client/5.2.7": {
@@ -303,7 +332,7 @@
           "lib/netcoreapp3.1/Microsoft.Extensions.Caching.Memory.dll": {}
         }
       },
-      "Microsoft.Extensions.DependencyInjection/5.0.0": {
+      "Microsoft.Extensions.DependencyInjection/5.0.1": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection.Abstractions": "5.0.0"
@@ -2218,7 +2247,9 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
         "dependencies": {
+          "FluentValidation.AspNetCore": "9.5.3",
           "Microsoft.AspNet.WebApi.Core": "5.2.7",
+          "Microsoft.Extensions.DependencyInjection": "5.0.1",
           "Newtonsoft.Json": "12.0.3"
         },
         "compile": {
@@ -2226,7 +2257,10 @@
         },
         "runtime": {
           "bin/placeholder/TouristSpotCore.dll": {}
-        }
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
       },
       "TouristSpotsData/1.0.0": {
         "type": "project",
@@ -2249,7 +2283,6 @@
         "framework": ".NETCoreApp,Version=v3.1",
         "dependencies": {
           "IdentityModel": "5.0.1",
-          "Microsoft.AspNet.Identity.Core": "2.2.3",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "5.0.0",
           "Microsoft.Extensions.Identity.Stores": "5.0.4",
           "System.ComponentModel.Annotations": "5.0.0"
@@ -2278,6 +2311,56 @@
     }
   },
   "libraries": {
+    "FluentValidation/9.5.3": {
+      "sha512": "BataCga/cwQUeo9yy8dzDnihx3N5l1+wj6kEQOkdQ5FIsSFcWD/UjdPJ2jNKODSPAtYuDH5KLM5IBrr1UCNf/A==",
+      "type": "package",
+      "path": "fluentvalidation/9.5.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "fluent-validation-icon.png",
+        "fluentvalidation.9.5.3.nupkg.sha512",
+        "fluentvalidation.nuspec",
+        "lib/net461/FluentValidation.dll",
+        "lib/net461/FluentValidation.xml",
+        "lib/net5.0/FluentValidation.dll",
+        "lib/net5.0/FluentValidation.xml",
+        "lib/netstandard2.0/FluentValidation.dll",
+        "lib/netstandard2.0/FluentValidation.xml"
+      ]
+    },
+    "FluentValidation.AspNetCore/9.5.3": {
+      "sha512": "ihj6mFOBtzc4csXAUOJ7KwuKVB0fzIqvZloTy27lwDEcXNYCf34JroSa+N1O3XTvjbB6pWHsajZS5EXyGz6TSA==",
+      "type": "package",
+      "path": "fluentvalidation.aspnetcore/9.5.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "fluent-validation-icon.png",
+        "fluentvalidation.aspnetcore.9.5.3.nupkg.sha512",
+        "fluentvalidation.aspnetcore.nuspec",
+        "lib/net5.0/FluentValidation.AspNetCore.dll",
+        "lib/net5.0/FluentValidation.AspNetCore.xml",
+        "lib/netcoreapp2.1/FluentValidation.AspNetCore.dll",
+        "lib/netcoreapp2.1/FluentValidation.AspNetCore.xml",
+        "lib/netcoreapp3.1/FluentValidation.AspNetCore.dll",
+        "lib/netcoreapp3.1/FluentValidation.AspNetCore.xml"
+      ]
+    },
+    "FluentValidation.DependencyInjectionExtensions/9.5.3": {
+      "sha512": "IdGc5poMmWMFOVTgpVFN35EuHqx1S5AyALLJyyqsdDbZcuWcCZG9j41MrS/K1vIENkSypg1y15VCkWw12Vxa1Q==",
+      "type": "package",
+      "path": "fluentvalidation.dependencyinjectionextensions/9.5.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "fluent-validation-icon.png",
+        "fluentvalidation.dependencyinjectionextensions.9.5.3.nupkg.sha512",
+        "fluentvalidation.dependencyinjectionextensions.nuspec",
+        "lib/netstandard2.0/FluentValidation.DependencyInjectionExtensions.dll",
+        "lib/netstandard2.0/FluentValidation.DependencyInjectionExtensions.xml"
+      ]
+    },
     "IdentityModel/5.0.1": {
       "sha512": "njk/AnO85Nc0JWiL3Zf4IAI+7PnlfJbsg3YLchC2oKdgmeFf5d4Px3lhmQyzfH32lp54btyYItXnire8wDYmiQ==",
       "type": "package",
@@ -2300,19 +2383,6 @@
         "lib/netstandard2.0/IdentityModel.dll",
         "lib/netstandard2.0/IdentityModel.pdb",
         "lib/netstandard2.0/IdentityModel.xml"
-      ]
-    },
-    "Microsoft.AspNet.Identity.Core/2.2.3": {
-      "sha512": "Mv5FpoaxspE8hlWLE4r1IdZtovg/OyFgVRhxQbx47J4sqdLImN1hnM1lnwCj+/wLmqtqFk/RYMoZ5GAcwm/00g==",
-      "type": "package",
-      "path": "microsoft.aspnet.identity.core/2.2.3",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/net45/Microsoft.AspNet.Identity.Core.dll",
-        "lib/net45/Microsoft.AspNet.Identity.Core.xml",
-        "microsoft.aspnet.identity.core.2.2.3.nupkg.sha512",
-        "microsoft.aspnet.identity.core.nuspec"
       ]
     },
     "Microsoft.AspNet.WebApi.Client/5.2.7": {
@@ -2824,10 +2894,10 @@
         "microsoft.extensions.caching.memory.nuspec"
       ]
     },
-    "Microsoft.Extensions.DependencyInjection/5.0.0": {
-      "sha512": "Rc2kb/p3Ze6cP6rhFC3PJRdWGbLvSHZc0ev7YlyeU6FmHciDMLrhoVoTUEzKPhN5ZjFgKF1Cf5fOz8mCMIkvpA==",
+    "Microsoft.Extensions.DependencyInjection/5.0.1": {
+      "sha512": "//mDNrYeiJ0eh/awFhDFJQzkRVra/njU5Y4fyK7X29g5HScrzbUkKOKlyTtygthcGFt4zNC8G5CFCjb/oizomA==",
       "type": "package",
-      "path": "microsoft.extensions.dependencyinjection/5.0.0",
+      "path": "microsoft.extensions.dependencyinjection/5.0.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -2842,7 +2912,7 @@
         "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.xml",
         "lib/netstandard2.1/Microsoft.Extensions.DependencyInjection.dll",
         "lib/netstandard2.1/Microsoft.Extensions.DependencyInjection.xml",
-        "microsoft.extensions.dependencyinjection.5.0.0.nupkg.sha512",
+        "microsoft.extensions.dependencyinjection.5.0.1.nupkg.sha512",
         "microsoft.extensions.dependencyinjection.nuspec",
         "useSharedDesignerContext.txt",
         "version.txt"
@@ -7828,16 +7898,6 @@
     }
   },
   "logs": [
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "O pacote 'Microsoft.AspNet.Identity.Core 2.2.3' foi restaurado usando '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' em vez da estrutura de destino do projeto '.NETCoreApp,Version=v3.1'. Esse pacote pode não ser totalmente compatível com o seu projeto.",
-      "libraryId": "Microsoft.AspNet.Identity.Core",
-      "targetGraphs": [
-        ".NETCoreApp,Version=v3.1"
-      ]
-    },
     {
       "code": "NU1701",
       "level": "Warning",

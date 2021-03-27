@@ -1,11 +1,16 @@
 {
   "version": 2,
-  "dgSpecHash": "3RRs7OETR8VwBXqDyhREI/tuQGgzQb0L5DXy0s8nflouJ1lGgJoFmcgqGw+wmlkq+T4byk70DcBS0I9JjcKv+w==",
+  "dgSpecHash": "AQR/6bGB8kIQyTpxNCOK8yF1THLaivroD/O/JsnHh5z2nHOwEp3FQQz0RXyErXZywBxH9HaWdifmJSFkg7dQjg==",
   "success": true,
   "projectFilePath": "C:\\Users\\samue\\source\\repos\\TouristSpots\\TouristSpotCore\\TouristSpotCore.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\samue\\.nuget\\packages\\fluentvalidation\\9.5.3\\fluentvalidation.9.5.3.nupkg.sha512",
+    "C:\\Users\\samue\\.nuget\\packages\\fluentvalidation.aspnetcore\\9.5.3\\fluentvalidation.aspnetcore.9.5.3.nupkg.sha512",
+    "C:\\Users\\samue\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\9.5.3\\fluentvalidation.dependencyinjectionextensions.9.5.3.nupkg.sha512",
     "C:\\Users\\samue\\.nuget\\packages\\microsoft.aspnet.webapi.client\\5.2.7\\microsoft.aspnet.webapi.client.5.2.7.nupkg.sha512",
     "C:\\Users\\samue\\.nuget\\packages\\microsoft.aspnet.webapi.core\\5.2.7\\microsoft.aspnet.webapi.core.5.2.7.nupkg.sha512",
+    "C:\\Users\\samue\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\5.0.1\\microsoft.extensions.dependencyinjection.5.0.1.nupkg.sha512",
+    "C:\\Users\\samue\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\5.0.0\\microsoft.extensions.dependencyinjection.abstractions.5.0.0.nupkg.sha512",
     "C:\\Users\\samue\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\samue\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
     "C:\\Users\\samue\\.nuget\\packages\\microsoft.win32.primitives\\4.3.0\\microsoft.win32.primitives.4.3.0.nupkg.sha512",

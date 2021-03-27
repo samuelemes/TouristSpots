@@ -225,7 +225,7 @@ namespace TouristSpotsData.Migrations
                     idTouristSport = table.Column<int>(nullable: false),
                     idUser = table.Column<int>(nullable: false),
                     ImageTitle = table.Column<string>(nullable: true),
-                    Image = table.Column<string>(nullable: true)
+                    Image = table.Column<byte[]>(nullable: true)
                 },
                 constraints: table =>
                 {
@@ -243,6 +243,11 @@ namespace TouristSpotsData.Migrations
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                 });
+
+            migrationBuilder.InsertData(
+                table: "AspNetUsers",
+                columns: new[] { "Id", "AccessFailedCount", "ConcurrencyStamp", "Email", "EmailConfirmed", "IsAdmin", "LockoutEnabled", "LockoutEnd", "NormalizedEmail", "NormalizedUserName", "PasswordHash", "PhoneNumber", "PhoneNumberConfirmed", "SecurityStamp", "TwoFactorEnabled", "UserName" },
+                values: new object[] { 1, 0, "523ebf44-6c83-46c9-b95a-158b5aa7c2e9", null, false, true, false, null, null, null, null, null, false, null, false, "samuelemes" });
 
             migrationBuilder.InsertData(
                 table: "Category",

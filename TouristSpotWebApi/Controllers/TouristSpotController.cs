@@ -1,9 +1,13 @@
 ﻿using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
+using Sistema.Domain.Interfaces.Services;
+using System;
 using System.Collections.Generic;
-using System.Net.Http;
 using TouristSpotCore.Lib.Http;
+using TouristSpotsData.Repositories;
 using TouristSpotsDomain.Entities;
+using TouristSpotsDomain.Interface.Repositories;
+using TouristSpotsService;
 using TouristSpotsService.Interfaces;
 
 namespace TouristSpotWebApi.Controllers
@@ -18,15 +22,23 @@ namespace TouristSpotWebApi.Controllers
             _service = service;
         }
 
-        [HttpPost]
-        [Route("{model}")]
-        [Consumes("application/json")]
-        public HttpResponseMessage BuscarPais()
+        public IActionResult GetByFilter([FromBody] TouristSpot filter)
         {
-            var result = new ResultBase<IEnumerable<TouristSpot>>();
-            //result.Data = _service.GetByName(filter);
+            try
+            {
+                var result = new ResultBase<IEnumerable<TouristSpot>>();
 
-            return null;
+                result.Success = true;
+                result.Data = _service.GetByName(filter);
+
+                return new ObjectResult(result);
+            }
+            catch (Exception erro)
+            {
+                var result = new ResultBase<IEnumerable<TouristSpot>>();
+                result.Success = false;
+                throw new Exception(erro.Message);
+            }            
         }
     }
 }

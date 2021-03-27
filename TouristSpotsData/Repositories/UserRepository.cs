@@ -1,9 +1,9 @@
-﻿using Microsoft.AspNetCore.Identity;
+﻿using TouristSpotsDomain.Entities.Security;
 using TouristSpotsDomain.Interface.Repositories;
 
 namespace TouristSpotsData.Repositories
 {
-    public class UserRepository : RepositoryBase<IdentityUser<int>>, IUserRepository
+    public class UserRepository : RepositoryBase<AppUser>, IUserRepository
     {
     }
 }
