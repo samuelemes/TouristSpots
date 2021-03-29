@@ -1,0 +1,12 @@
+C:\app\TouristSpotCore.dll
+C:\app\TouristSpotCore.deps.json
+C:\app\TouristSpotCore.pdb
+C:\app\FluentValidation.dll
+C:\app\FluentValidation.AspNetCore.dll
+C:\app\FluentValidation.DependencyInjectionExtensions.dll
+C:\app\System.Net.Http.Formatting.dll
+C:\app\System.Web.Http.dll
+C:\app\Microsoft.Extensions.DependencyInjection.dll
+C:\app\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\app\Newtonsoft.Json.dll
+C:\app\Newtonsoft.Json.Bson.dll
