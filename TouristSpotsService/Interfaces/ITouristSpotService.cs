@@ -9,5 +9,6 @@ namespace TouristSpotsService.Interfaces
         IEnumerable<TouristSpot> GetByName(TouristSpot filter);
 
         //Definir Servicos padroes para as classes herdeiras
+        TouristSpot Create(TouristSpot model);
     }
 }

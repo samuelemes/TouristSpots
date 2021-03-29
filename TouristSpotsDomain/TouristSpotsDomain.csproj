@@ -13,6 +13,7 @@
   <ItemGroup>
     <Compile Include="Entities\Security\AppRole.cs" />
     <Compile Include="Entities\Security\AppUser.cs" />
+    <Compile Include="Entities\Security\AppUserLogin.cs" />
   </ItemGroup>
 
   <ItemGroup>

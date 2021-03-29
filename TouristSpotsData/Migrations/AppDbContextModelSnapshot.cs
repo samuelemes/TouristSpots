@@ -282,7 +282,7 @@ namespace TouristSpotsData.Migrations
                         {
                             Id = 1,
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "523ebf44-6c83-46c9-b95a-158b5aa7c2e9",
+                            ConcurrencyStamp = "6b040c10-7fc6-4590-bc79-f36bc9ac8385",
                             EmailConfirmed = false,
                             IsAdmin = true,
                             LockoutEnabled = false,
@@ -424,7 +424,7 @@ namespace TouristSpotsData.Migrations
             modelBuilder.Entity("TouristSpotsDomain.Entities.TouristSpotPhoto", b =>
                 {
                     b.HasOne("TouristSpotsDomain.Entities.TouristSpot", "TouristSpots")
-                        .WithMany()
+                        .WithMany("Photos")
                         .HasForeignKey("idTouristSport")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();

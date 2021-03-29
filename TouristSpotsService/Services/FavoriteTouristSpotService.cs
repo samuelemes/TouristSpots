@@ -1,4 +1,6 @@
-﻿using TouristSpotsDomain.Entities;
+﻿using Microsoft.EntityFrameworkCore;
+using System.Collections.Generic;
+using TouristSpotsDomain.Entities;
 using TouristSpotsDomain.Interface.Repositories;
 using TouristSpotsService.Interfaces;
 
@@ -11,6 +13,11 @@ namespace TouristSpotsService
         public FavoriteTouristSpotService(IFavoriteTouristSpotRepository modelRepository) : base(modelRepository)
         {
             _repository = modelRepository;
+        }
+
+        public IEnumerable<FavoriteTouristSpot> getByUser(int idUsuario)
+        {
+            return _repository.getByUser(idUsuario);
         }
     }
 }

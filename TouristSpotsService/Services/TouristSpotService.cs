@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using TouristSpotsDomain.Entities;
 using TouristSpotsDomain.Interface.Repositories;
 using TouristSpotsService.Interfaces;
@@ -12,6 +13,15 @@ namespace TouristSpotsService
         public TouristSpotService(ITouristSpotRepository modelRepository) : base(modelRepository)
         {
             _repository = modelRepository;
+        }
+
+        public TouristSpot Create(TouristSpot model)
+        {
+            if (model == null)
+                throw new Exception("Modelo Nulo");
+
+            _repository.Add(model);
+            return model;
         }
 
         public IEnumerable<TouristSpot> GetByName(TouristSpot filter)

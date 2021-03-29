@@ -1,13 +1,11 @@
 ﻿using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
-using Sistema.Domain.Interfaces.Services;
 using System;
 using System.Collections.Generic;
 using TouristSpotCore.Lib.Http;
-using TouristSpotsData.Repositories;
 using TouristSpotsDomain.Entities;
-using TouristSpotsDomain.Interface.Repositories;
-using TouristSpotsService;
+using TouristSpotsDomain.Entities.Security;
 using TouristSpotsService.Interfaces;
 
 namespace TouristSpotWebApi.Controllers
@@ -16,10 +14,39 @@ namespace TouristSpotWebApi.Controllers
     {
         public static IWebHostEnvironment _environment;
         private readonly ITouristSpotService _service;
+        private readonly UserManager<AppUser> _userManager;
+        private readonly SignInManager<AppUser> _signInManager;
 
-        public TouristSpotController(ITouristSpotService service) : base(service)
+        public TouristSpotController(
+            UserManager<AppUser> userManager,
+            SignInManager<AppUser> signInManager,
+            ITouristSpotService service)
+            : base(userManager, signInManager, service)
         {
+            _userManager = userManager;
+            _signInManager = signInManager;
             _service = service;
+        }
+
+        [HttpPost]
+        public override IActionResult Create([FromHeader] AppUser user, [FromBody] TouristSpot model)
+        {
+            var result = new ResultBase<TouristSpot>();
+            try
+            {
+                _service.Create(model);
+                result.Success = true;
+                result.Data = model;
+
+                return new ObjectResult(model);
+            }
+            catch (Exception erro)
+            {
+                result.Success = false;
+                result.Exception = new Exception(erro.InnerException.Message);
+
+                return new ObjectResult(result);
+            }
         }
 
         public IActionResult GetByFilter([FromBody] TouristSpot filter)

@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.Authentication.Facebook;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
@@ -28,6 +29,15 @@ namespace TouristSpotWebApi
 
             services.AddDbContext<AppDbContext>();
 
+            services.AddAuthentication();
+            //services.AddAuthentication()
+            //        .AddFacebook(options => {
+            //            options.AppId = Configuration["Authentication:Facebook:2886996594903513"];
+            //            options.AppSecret = Configuration["Authentication:Facebook:2886996594903513"];
+            //            options.AccessDeniedPath = "/AccessDeniedPathInfo";
+            //        });
+
+
             services.AddControllers()
                 .ConfigureApiBehaviorOptions(options =>
                 {
@@ -53,11 +63,19 @@ namespace TouristSpotWebApi
         {
             base.ConfigureBase(app, env);
 
+          
+
+            var builder = new ConfigurationBuilder()
+                .SetBasePath(env.ContentRootPath)
+                .AddJsonFile("appsettings.json", optional: true, reloadOnChange: true)
+                .AddJsonFile($"appsettings.{env.EnvironmentName}.json", optional: true);
+
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
                 app.UseStaticFiles();
                 app.UseDatabaseErrorPage();
+                //builder.AddUserSecrets();
             }
             else
             {
@@ -77,9 +95,11 @@ namespace TouristSpotWebApi
             app.UseRouting();
             app.UseCors();
 
+            app.UseAuthorization();
+            app.UseAuthentication();
+
             app.UseEndpoints(endpoints =>
             {
-                //endpoints.MapRazorPages();
                 //endpoints.MapControllers();
                 endpoints.MapControllerRoute(
                     name: "default",

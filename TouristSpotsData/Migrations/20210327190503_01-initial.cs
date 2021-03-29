@@ -247,7 +247,7 @@ namespace TouristSpotsData.Migrations
             migrationBuilder.InsertData(
                 table: "AspNetUsers",
                 columns: new[] { "Id", "AccessFailedCount", "ConcurrencyStamp", "Email", "EmailConfirmed", "IsAdmin", "LockoutEnabled", "LockoutEnd", "NormalizedEmail", "NormalizedUserName", "PasswordHash", "PhoneNumber", "PhoneNumberConfirmed", "SecurityStamp", "TwoFactorEnabled", "UserName" },
-                values: new object[] { 1, 0, "523ebf44-6c83-46c9-b95a-158b5aa7c2e9", null, false, true, false, null, null, null, null, null, false, null, false, "samuelemes" });
+                values: new object[] { 1, 0, "6b040c10-7fc6-4590-bc79-f36bc9ac8385", null, false, true, false, null, null, null, null, null, false, null, false, "samuelemes" });
 
             migrationBuilder.InsertData(
                 table: "Category",

@@ -5,6 +5,6 @@ namespace TouristSpotsDomain.Interface.Repositories
 {
     public interface IFavoriteTouristSpotRepository : IRepositoryBase<FavoriteTouristSpot>
     {
-        IEnumerable<FavoriteTouristSpot> getByUser(FavoriteTouristSpot filter);
+        IEnumerable<FavoriteTouristSpot> getByUser(int idUsuario);
     }
 }
