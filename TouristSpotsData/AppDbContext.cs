@@ -19,7 +19,7 @@ namespace TouristSpotsData
  
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer(@"Data Source=(LocalDb)\v11.0;AttachDbFilename=D:\users\samue\TouristSpot.mdf;Initial Catalog=TouristSpot;Integrated Security=True; MultipleActiveResultSets=true");
+            optionsBuilder.UseSqlServer(@"Data Source=(LocalDb)\v11.0;AttachDbFilename=|DataDirectory|TouristSpot.mdf;Initial Catalog=TouristSpot;Integrated Security=True; MultipleActiveResultSets=true");
         }
 
         public DbSet<Category> Category { get; set; }

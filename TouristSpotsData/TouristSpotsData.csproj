@@ -5,15 +5,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="Migrations\20210327142527_01-initial.cs" />
-    <Compile Remove="Migrations\20210327142527_01-initial.Designer.cs" />
-    <Compile Remove="Migrations\20210327145225_01-initial.cs" />
-    <Compile Remove="Migrations\20210327145225_01-initial.Designer.cs" />
-    <Compile Remove="Migrations\20210327145245_01-initial.cs" />
-    <Compile Remove="Migrations\20210327145245_01-initial.Designer.cs" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\TouristSpotsDomain\TouristSpotsDomain.csproj" />
   </ItemGroup>
 

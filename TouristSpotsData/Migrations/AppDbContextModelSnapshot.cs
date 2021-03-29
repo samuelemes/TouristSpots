@@ -15,7 +15,7 @@ namespace TouristSpotsData.Migrations
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "3.1.11")
+                .HasAnnotation("ProductVersion", "3.1.13")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
@@ -282,7 +282,7 @@ namespace TouristSpotsData.Migrations
                         {
                             Id = 1,
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "6b040c10-7fc6-4590-bc79-f36bc9ac8385",
+                            ConcurrencyStamp = "2d5c6a0f-a484-412a-acb0-fe77978a19b6",
                             EmailConfirmed = false,
                             IsAdmin = true,
                             LockoutEnabled = false,
